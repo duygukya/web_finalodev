@@ -1,0 +1,126 @@
+.product-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	margin: 16px;
+	text-align: center;
+	transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.product-card a {
+	text-decoration: none;
+	color: #333;
+}
+/* Ürün kartı stil ayarları */
+.products-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px;
+}
+
+.products-container ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.products-container li {
+	flex: 1 1 calc(20% - 32px);
+	box-sizing: border-box;
+	margin: 16px;
+	max-width: 250px;
+	max-height: 350px;
+	background-color: #DFFFE1;
+	position: relative; /* Hover durumunda açıklamayı göstermek için */
+}
+
+.products-container img {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.products-container a {
+	font-size: 14px; /* Yazı boyutunu küçült */
+	line-height: 1.2; /* Satır aralığını azalt */
+}
+
+.products-container strong {
+	font-size: 16px; /* Başlık boyutunu küçült */
+}
+
+.products-container .description {
+	font-size: 12px; /* Açıklama boyutunu küçült */
+}
+
+.product-card .add-to-cart {
+	position: absolute;
+	bottom: 16px; /* Açıklamanın altında 16 piksel mesafede */
+	left: 50%; /* Ürün kartının tam ortasına hizalanması için */
+	transform: translateX(-50%);
+}
+
+.product-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	text-align: center;
+	transition: box-shadow 0.3s ease;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.product-card a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.product-card a:hover {
+	color: #007BFF;
+}
+.product-card .add-to-cart:hover + .description {
+    display: block; /* Sadece ürün adına hover olduğunda açıklamayı göster */
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #007BFF; /* Hover durumunda arka plan rengini değiştir */
+    color: #fff; /* Metin rengini beyaz yap */
+    cursor: pointer; /* Fareyi gösterge el işaretine çevir */
+}
+
+.product-card strong {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.product-card .price {
+	color: #28a745;
+	font-size: 1.2em;
+}
